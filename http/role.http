@@ -1,0 +1,32 @@
+### 获取所有role
+GET http://localhost:8000/api/role/all
+
+### 获取role
+GET http://localhost:8000/api/role/list?page=1&size=4
+
+
+### 新建role
+POST http://localhost:8000/api/role/save
+Content-Type: application/json
+
+{
+  "title": "<script>xxccccccccccccccccc1z</script>"
+}
+
+### 编辑role
+POST http://localhost:8000/api/role/save
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "te"
+}
+
+### 删除role
+POST http://localhost:8000/api/role/delete
+Content-Type: application/json
+
+{
+  "deleteId": [5,6,7,8]
+}
+
